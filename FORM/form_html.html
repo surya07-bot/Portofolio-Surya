@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tanpa Database</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+        }
+
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            background-color: azure;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Survey Kesadaran Diri</h1>
+    
+
+<form id="form">
+    <div class="form-control">
+        <label for="name" id="label-name">
+            Name :
+        </label>
+        <input type="text" id="name" placeholder="Masukkan Nama Anda..">
+    </div>
+
+    <div class="form-control">
+        <label for="email" id="label-email">
+            Email :
+        </label>
+        <input type="email" id="email" placeholder="Masukkan Email Anda">
+    </div>
+
+    <div class="form-control">
+        <label for="umur" id="label-umur">
+            Umur : 
+        </label>
+        <input type="text" id="umur" placeholder="Masukkan Umur Anda">
+    </div>
+
+    <div class="form-control">
+        <label for="seorang" id="label-seorang">
+            Saya Merupakan Seorang?
+        </label>
+
+        <select name="seorang" id="seorang">
+            <option value="Pelajar">Pelajar</option>
+            <option value="Masyarakat_biasa">Masyarakat biasa</option>
+            <option value="Petualang">Petualang</option>
+            <option value="Untung_Hidup">Untung Hidup</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label>Apakah Anda Memiliki Pasangan?</label>
+
+        <label for="rekomendasi-1">
+            <input type="radio" id="rekomendasi-1" name="rekomendasi">Iya
+        </label>
+        <label for="rekomendasi-2">
+            <input type="radio" id="rekomendasi-2" name="rekomendasi">Tidak
+        </label>
+        <label for="rekomendasi-3">
+            <input type="radio" id="rekomendasi-3" name="rekomendasi">HTS
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>Berapa Jumlah Teman Anda?</label>
+        <label for="inpt-1">
+            <input type="checkbox" name="inpt">1 Orang
+        </label>
+        <label for="inpt-2">
+            <input type="checkbox" name="inpt">2 Orang
+        </label>
+        <label for="inpt-3">
+            <input type="checkbox" name="inpt">3 Orang + 1 Pacar
+        </label>
+        <label for="inpt-4">
+            <input type="checkbox" name="inpt">5 Orang + 1 Pacar
+        </label>
+        <label for="inpt-5">
+            <input type="checkbox" name="inpt">2 Orang + 2 Pacar
+        </label>
+        <label for="inpt-6">
+            <input type="checkbox" name="inpt">1 Orang + 5 Pacar
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label for="komentar">
+            Berikan Komentar Anda
+        </label>
+        <textarea name="komentar" id="komentar" placeholder="Isi Komentar Anda Disini"></textarea>
+    </div>
+    <button type="submit" value="submit">
+        Simpan
+    </button>
+
+</form>
+</body>
+</html>
